@@ -1,3 +1,4 @@
+//writin by ahmed tarek
 #include <iostream>
 #include "algorithm"
 #include "User.h"
@@ -64,13 +65,12 @@ int main () {
                             if ( UserList1 -> searchUser (name_target) ==
                                  nullptr )           //check if user exist or nor
                             {
-                                cout << "NOT FOUNDED with name = "<<name_target << endl;
+                                cout << "NOT FOUNDED with name = "<<name_target;
                                 continue;
                             } else {
-                                cout << *UserList1 -> searchUser (name_target)
-                                     << endl;       //user founded and will print his data
+                                cout << *UserList1 -> searchUser (name_target);       //user founded and will print his data
 
-                                cout << endl << "1- Delete User" << endl
+                                cout << "1- Delete User" << endl
                                      << "2- Return to Users Menu" << endl;
                                 int after_search_choice = 0;        //to choose delete or return
                                 cin >> after_search_choice;
@@ -95,8 +95,8 @@ int main () {
                                 cout << "NOT FOUNDED with Id = "<<Id_Target << endl;
                                 continue;
                             } else {
-                                cout << *UserList1 -> searchUser (Id_Target) << endl;
-                                cout << endl << "1- Delete User" << endl
+                                cout << *UserList1 -> searchUser (Id_Target);
+                                cout <<"1- Delete User" << endl
                                      << "2- Return to Users Menu" << endl;
                                 int after_search_choice = 0;
                                 cin >> after_search_choice;
@@ -117,7 +117,7 @@ int main () {
                     }
                 } else if ( first_choice_from_user_menu == 3 ) //Display
                 {
-                    cout << *UserList1 << endl;
+                    cout << *UserList1;
                 } else if ( first_choice_from_user_menu == 4 ) //return
                 {
                     break;
@@ -337,7 +337,7 @@ int main () {
                 }
                 else if ( choose_from_book_menu == 3 )      //Display
                 {
-                    cout << BookList1 << endl;
+                    cout << BookList1;
                 }
                 else if ( choose_from_book_menu == 4 )  //Get highest
                 {
