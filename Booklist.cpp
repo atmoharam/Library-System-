@@ -22,8 +22,6 @@ BookList::BookList ( int capacity )        //pratmeteraize constructor take size
         ( books + ind ) -> setCategory ( "" );
         ( books + ind ) -> setISBN ( "" );
         ( books + ind ) -> setTitle ( "" );
-        User us ;
-        ( books + ind ) ->setAuthor(us);
         ( books + ind ) -> setId ( ind + 1 );
 
     }
