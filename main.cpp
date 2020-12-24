@@ -1,4 +1,3 @@
-//writin by ahmed tarek
 #include <iostream>
 #include "algorithm"
 #include "User.h"
@@ -181,7 +180,9 @@ int main () {
                     }
                 } else if ( choose_from_book_menu == 2 )      //search
                 {
-                    while (true) {
+                    bool f1=0;
+                    while (true)
+                    {
                         cout << "SEARCH FOR A BOOK" << endl
                              << "1- Search by name" << endl
                              << "2- Search by id" << endl
@@ -256,6 +257,7 @@ int main () {
                                     }
                                     else if ( choose_after_search == 6 )      //back
                                     {
+                                        f1=1;
                                         break;
                                     }
                                 }
@@ -324,16 +326,22 @@ int main () {
                                         BookList1[ Id_target - 1 ] . rateBook (new_rating);
                                     } else if ( after_search_choose == 6 )      //back
                                     {
+                                        f1=1;
                                         break;
 
                                     }
                                 }
                             }
-                        } else if ( type_of_search == 3 )       //exit
+                        } else if ( type_of_search == 3)       //exit
+                        {
+                            break;
+                        }
+                        if(f1==1)
                         {
                             break;
                         }
                     }
+
                 }
                 else if ( choose_from_book_menu == 3 )      //Display
                 {
