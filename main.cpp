@@ -345,7 +345,7 @@ int main () {
                 }
                 else if ( choose_from_book_menu == 3 )      //Display
                 {
-                    cout << BookList1;
+                    cout << BookList1<<endl<<"============================="<<endl;
                 }
                 else if ( choose_from_book_menu == 4 )  //Get highest
                 {
